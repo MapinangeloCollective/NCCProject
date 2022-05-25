@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(29, 28, 28); 
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    height: 100%;
+}	
+footer{
+    background-color: #558b43; 
+    text-align: center;
+    padding-bottom: 1px;
+    padding: 30px;
+}
+/* Set h1 parameters here */
+h1 {
+	color:#ffff; 
+	font-family: 'Garamond', cursive;
+	font-size: 60px;
+	font-weight: lighter;
+	text-shadow: 2px 2px 5px #000000;
+    margin: 25px;
+} 
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #558b43
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0d8d8;
+}
+h4 {
+    font-size: 20px;
+    text-align: center;
+    color: #e0d8d8;  
+}
+p {
+	color: #000000; 
+    font-family: 'Verdana', sans-serif;
+    font: 12px;
+    color: #e0d8d8;
+}
+/* Parameters to have Company Name overtop of hero image, Owner Kerstyne*/
+.heroimagetitle {
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.heroimagecontainercontainer{
+    height: 300px;
+}
+/* Parameters to contain the hero image*/
+.heroimagecontainer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/heroimage.jpg");
+	position: relative;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 768px) {   
+    h1{ /*Sets page title smaller for smaller devices*/
+        font-size: 40px;
+    }
+    .heroimagecontainercontainer{
+        height: 250px;
+    }
+}
+/* Parameters for mission statement on landing page*/
+.appname{
+	padding-top: 60px;
+    margin-left: 90px;
+    margin-right:90px;
+    text-align:justify; 
+} 
+.Proposaldiv{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+.Processdiv{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    min-width: 700px;
+}
+
+/* Nav Bar styles: reference https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_navbar*/
+.Navbar {
+    overflow: hidden;
+    background-color:#dcdfdb;  
+}
+
+.NavBar a {
+    float: left;
+    display: block;
+    color:#ffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.NavBar a:hover {
+    background-color:#aed4a1;
+    color: black;
+}
+
+/* Footer link style */
+.PEC {
+    color:#ffff;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+/* Linkedin button taken from https://github.com/KerstyneW/a3web/blob/main/css/styles.css*/
+.linkedinbutton {
+    transition-duration: 0.4s;
+    color: rgb(29, 28, 28); 
+    background-color:#aed4a1;
+    border: none;
+    font-size: 25px;
+
+}
+.linkedinbutton:hover {
+    color: #0a66c2;
+    cursor: pointer;
+}
+
+/*Container for Projects section on landing page, owner: Jade*/
+.flex-containerProjects {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DBCCE0;
+    justify-content: center;
+    margin: 30px;
+}
+.flex-containerProjects > div {
+    background-color: #f1f1f1;
+    width: 10%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+    flex-wrap: wrap;
+    border-radius: 20%;
+}
+.ProjectsImg {
+      max-width:100%;
+      height:auto;
+      border: 1px solid #a5d097; /*Colour here set because hue rotate effects border colour too - using this colour results in desired colour for border.*/
+      border-radius:50%;
+      filter:hue-rotate(180deg);
+}
+/*Responsive styling for projects section, owner: Jade*/
+@media only screen and (max-width: 1200px) {
+    .flex-containerProjects {
+        margin: 0;
+    }
+	.flex-containerProjects > div {
+    width: 30%;
+    margin: 10px;
+  }
+}
